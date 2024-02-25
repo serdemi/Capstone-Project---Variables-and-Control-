@@ -1,7 +1,7 @@
 import math
 
 while True:
-    # Display the menu and prompt user for choice
+    # Display the menu and prompt the user for choice
     print("""Menu:
     investment - calculate interest on investment 
     bond       - calculate home loan repayment""")
@@ -56,3 +56,5 @@ while True:
 
     else:
         print("Invalid choice. Please enter 'investment' or 'bond'.")
+        # Prompt user to enter a valid choice instead of restarting the loop
+        user_choice = input("\nEnter 'investment' or 'bond': ").lower()

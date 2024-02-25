@@ -14,6 +14,12 @@ while True:
             principal_amount = float(input("Enter the amount of money to deposit: "))
             interest_rate = float(input("Enter the interest rate: "))
             num_of_years = float(input("Enter the number of years to invest: "))
+            
+            # Validate the number of years
+            if num_of_years <= 0:
+                print("Invalid input. Number of years must be a positive value.")
+                continue  # Restart the loop
+
         except ValueError:
             print("Invalid input. Please enter numeric values.")
             continue  # Restart the loop
